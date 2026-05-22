@@ -32,7 +32,7 @@ df.to_csv("data/cleaned_sales.csv", index=False)
 from sqlalchemy import create_engine
 
 engine = create_engine(
-    "postgresql://postgres:958849@localhost:5433/retail_db"
+    "postgresql://postgres:Password@localhost:5433/retail_db"
 )
 
 df.to_sql(
