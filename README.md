@@ -33,7 +33,7 @@ The script does the following:
 The script currently connects to PostgreSQL using the URI:
 
 ```
-postgresql://postgres:909651@localhost:5433/retail_db
+postgresql://postgres:Password@localhost:5433/retail_db
 ```
 
 Update this URI in `scripts/et1.py` if your database host, port, user, password, or database name differ.

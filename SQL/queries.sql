@@ -27,3 +27,12 @@ GROUP BY "OutletType";
 -- Distinct Product Types with MRP less than 100
 select distinct "ProductType", "MRP" from sales
 Where "MRP" < 100 ;
+
+-- Product Type MRP range (min/max per ProductType)
+SELECT "ProductType",
+       MIN("MRP") AS "MinMRP",
+       MAX("MRP") AS "MaxMRP",
+       MIN("MRP") || ' - ' || MAX("MRP") AS "MRPRange"
+FROM sales
+GROUP BY "ProductType";
+
